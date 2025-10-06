@@ -1,0 +1,10 @@
+- name: task-1
+  hosts: localhost
+  vars_file:
+  - var.yaml
+  tasks:
+  - name: play task-1
+    vars:
+      course: "devops with aws"
+    ansible.builtin.debug:
+      msg: "hi, i am learning {{course}}, trainer is {{trainer}}, duration is {{duration}}"
