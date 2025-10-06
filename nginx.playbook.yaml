@@ -1,12 +1,12 @@
-- name: install nginx and run
+- name: install and run nginx 
   hosts: worker
   become: yes
   tasks:
-  - name: install nginx
+  - name: install nginx package
     ansible.builtin.dnf:
-    name: nginx
-    state: present
+      name: nginx
+      state: present
   - name: Run nginx
     ansible.builtin.service:
-    name: nginx
-    state: started  
+      name: nginx
+      state: started  
