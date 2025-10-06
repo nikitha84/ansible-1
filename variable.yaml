@@ -7,6 +7,6 @@
   tasks:
   - name: play task-1
     ansible.builtin.debug:
-      msg: "hi, i am learning {{cource}}, trainer is {{trainer}}, duration is {{duration}}"
+      msg: "hi, i am learning {{course}}, trainer is {{trainer}}, duration is {{duration}}"
 
   
