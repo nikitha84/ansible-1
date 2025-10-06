@@ -3,7 +3,7 @@
   hosts: localhost
   tasks:
   - name: print names
-    ansible.buitin.dnf:
+    ansible.builtin.dnf:
       name: "{{ item }}"
       state: latest
     loop:
