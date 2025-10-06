@@ -8,3 +8,5 @@
   - name: play task-1
     ansible.builtin.debug:
       msg: "hi, i am learning {{course}}, trainer is {{trainer}}, duration is {{duration}}"
+
+#$ansible-playbook -i inventory -e ansible_user=ec2-user -e ansible_password=DevOps321 variable-1.yaml -e "course=devops trainer=shiva duration=10HRS"
