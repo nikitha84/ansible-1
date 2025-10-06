@@ -1,0 +1,7 @@
+- name: task-1
+  hosts: localhost
+  tasks:
+  - name: play task-1
+    ansible.builtin.debug:
+      msg: "hi, i am learning {{course}}, trainer is {{trainer}}, duration is {{duration}}"
+

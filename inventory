@@ -1,2 +1,8 @@
 [master]
 54.162.163.202
+
+
+[localhost:vars]
+course="devops"
+trainer="shiva"
+duration="10HRS"
