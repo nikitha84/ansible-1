@@ -1,6 +1,6 @@
 - name: task-1
   hosts: localhost
-  vars_file:
+  vars_files:
   - var.yaml
   tasks:
   - name: play task-1
