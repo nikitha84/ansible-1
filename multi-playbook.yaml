@@ -5,6 +5,11 @@
   - name: play task-1
     ansible.builtin.debug:
       msg:"hello from taks-1"
+
+- name: task-1 and task-2
+  hosts: localhost
+  become: yes
+  tasks:     
   - name: play taks-2
     ansible.builtin.debug:
       msg: "hello from task-2"    
