@@ -1,6 +1,9 @@
-- name: play task-1
+- name: ping playbook
   hosts: localhost
   tasks:
+  - name: ping the server
+    ansible.builtin.ping:
+    
   - name: print message
     ansible.builtin.debug:
       msg: "hello devops"
