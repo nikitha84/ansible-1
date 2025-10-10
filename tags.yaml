@@ -3,7 +3,7 @@
   tasks:
   - name: ping the server
     ansible.builtin.ping:
-    
+
   - name: print message
     ansible.builtin.debug:
       msg: "hello devops"
@@ -11,7 +11,7 @@
     - devops
 
   - name: print message
-  ansible.builtin.debug:
-    msg: "hello aws"
-  tags:
-  - aws 
+    ansible.builtin.debug:
+      msg: "hello aws"
+    tags:
+    - aws 
